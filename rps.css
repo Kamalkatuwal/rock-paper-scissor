@@ -25,7 +25,7 @@
     height: 20em;
     border: 1px solid black;
     position: relative;
-    left: 10%;
+    left: 15%;
     top: 10%;
     padding-left:15px;
     padding-top: 8px;
@@ -38,7 +38,7 @@
 }
 #scoreboard{
     display: flex;
-    column-gap:12em;
+    column-gap:16.5em;
 }
 main{
     display: flex;
@@ -62,4 +62,26 @@ main div{
     border: 1px solid black;
     margin-top: 3em;
     border-radius: 4px;
+}
+.center{
+    width: 5em;
+    height: 5em;
+    border: none;
+    position: relative;
+    top: 55%;
+    left: 20%;
+    padding: 10px;
+    text-align: center;
+    transform: scale(3);
+}
+.center1{
+    width: 5em;
+    height: 5em;
+    border: none;
+    position: relative;
+    top: 55%;
+    left: 20%;
+    padding: 10px;
+    text-align: center;
+    transform: scale(3);
 }

@@ -1,28 +1,30 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="rps.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="mainwrapper">
-    <h2 class="header">Roc-Pap-Sic</h2>
-    <div class="fieldwrapper">
-    <span id="scoreboard">
-        <p class="pscore">Player-Score: <input type="number" id="ps"></p>
-        <p class="cscore">Computer-Score: <input type="number" id="cs"></p>
-    </span>
-    <main>
-        <div class="playerSection"></div>
-        <div class="computerSection"></div>
-    </main><div class="buttonwrap">
-    <div class="rbutton"></div>
-    <div class="pbutton"></div>
-    <div class="sbutton"></div>
-</div>
-</div>
-</div>
-    <script src="rps.js"></script>
+        <h2 class="header">Roc-Pap-Sic</h2>
+        <div class="fieldwrapper">
+        <span id="scoreboard">
+            <div class="pscore">Player:</div>
+            <div class="cscore">Computer:</div>
+        </span>
+        <main>
+            <div class="playerSection" id="pse"><div class="center">❔</div></div>
+            <div class="computerSection" id="cse"><div class="center1">❔</div></div>
+        </main><div class="buttonwrap">
+        <div class="rbutton" id="a">✊</div>
+        <div class="pbutton" id="b">✋</div>
+        <div class="sbutton" id="c">✌</div>
+    </div>
+    </div>
+    </div>
+        <script src="rps.js"></script>
+    </body>
 </body>
 </html>

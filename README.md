@@ -1,2 +1,2 @@
 # rock-paper-scissor
-practice
+practice only

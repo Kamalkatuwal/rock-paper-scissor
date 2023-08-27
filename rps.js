@@ -6,6 +6,7 @@ let computerArea= document.querySelector('.center1');
 let roc= document.getElementById('a');
 let pap= document.getElementById('b');
 let sic= document.getElementById('c');
+let message=document.querySelector('.scoreMessage');
 
 
 //creating random function for cs
@@ -26,20 +27,26 @@ let player=0;
 let computer=0;
 roundwunner='';
 function gameLogics(playerSelection,computerSelection){
-  if(playerSelection===computerSelection){
+  if(playerSelection === computerSelection){
     roundwinner='tie';
+    player;
+    computer;
   }
     if(
         (playerSelection==='rock' && computerSelection==='scissor')
         ||(playerSelection==='paper' && computerSelection==='rock')
      ||(playerSelection==='scissor' && computerSelection==='paper')){
-       ++player;
+      player++;
        roundwinner='player';
     }
-    else{
-        ++computer;
+    else if(
+      (playerSelection==='scissor' && computerSelection==='rock')
+      ||(playerSelection==='rock' && computerSelection==='paper')
+   ||(playerSelection==='paper' && computerSelection==='scissor')){
+        computer++;
         roundwinner='computer';
       }
+      updateMessage(roundwinner,playerSelection,computerSelection);
 }
 
 //creating the update function
@@ -71,6 +78,17 @@ function updateChoices(playerSelection, computerSelection) {
 function updatescore() {
   playerScore.innerHTML = `Player: ${player}`;
   computerScore.innerHTML = `Computer: ${computer}`;
+}
+function updateMessage(roundwinner,playerSelection,computerSelection){
+  if(roundwinner==='tie'){
+    message.innerHTML= 'it is a tie';
+  }
+  if(roundwinner==='player'){
+    message.innerHTML= playerSelection + ' won';
+  }
+  if(roundwinner==='computer'){
+    message.innerHTML=computerSelection + ' won'
+  }
 }
 
 //regulating the function
